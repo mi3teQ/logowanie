@@ -39,12 +39,14 @@ namespace logowanie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //  listahasla[lista.Find(x =>  x.pictureBox1.Image)]==haslo;
+           //listahasla[lista.Find(x =>  x.pictureBox1.Image)];
             if (textBox1.Text == "admin" && textBox2.Text == "Qwerty1@34") {
                 //this.hide();
                 Form2 f2 = new Form2();  
                 f2.ShowDialog();
-            } 
+
+            }
+           
         }
     }
 }
