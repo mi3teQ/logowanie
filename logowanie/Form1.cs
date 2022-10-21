@@ -19,6 +19,7 @@ namespace logowanie
         public Form1()
         {
             InitializeComponent();
+            //es
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
