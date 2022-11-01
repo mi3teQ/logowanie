@@ -113,10 +113,11 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(138, 23);
             this.textBox3.TabIndex = 7;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::logowanie.Properties.Resources._2;
+            this.pictureBox1.Image = global::logowanie.Properties.Resources.Image2;
             this.pictureBox1.Location = new System.Drawing.Point(160, 323);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
@@ -154,6 +155,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

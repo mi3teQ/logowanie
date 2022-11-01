@@ -24,15 +24,17 @@ namespace logowanie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            File.AppendAllText(@"C:\Users\TEMP\source\repos\logowanieee\uczen.txt", textBox1.Text.ToString() + " " + textBox2.Text.ToString() + " " + textBox3.Text.ToString() + Environment.NewLine);
+            File.AppendAllText(@"C:\\Users\\Temp\\source\\repos\\mi3teQ\\logowanie\\uczen.txt", textBox1.Text.ToString() + " " + textBox2.Text.ToString() + " " + textBox3.Text.ToString() + Environment.NewLine);
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            listBox1.DataSource = File.ReadAllLines("C:\\Users\\TEMP\\source\\repos\\logowanieee\\uczen.txt");
+            List<string> StachuPacz = File.ReadAllLines("C:\\Users\\Temp\\source\\repos\\mi3teQ\\logowanie\\uczen.txt").ToList(); //zmien temp na usera przed oddaniem pracy
 
+            listBox1.DataSource = StachuPacz;
            
         }
+
     }
 }
