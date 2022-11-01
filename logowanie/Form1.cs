@@ -105,5 +105,16 @@ namespace logowanie
             if (lista[indexRandom] == "Image6") { CaptchaHandler = listahasla.Key6; }
             if (lista[indexRandom] == "Image7") { CaptchaHandler = listahasla.Key7; }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "admin" && textBox2.Text == "Qwerty1@34" && textBox3.Text == CaptchaHandler)
+            {
+                this.Hide();
+                Form3 f3 = new Form3();
+                f3.ShowDialog();
+
+            }
+        }
     }
 }
