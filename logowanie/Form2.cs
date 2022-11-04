@@ -26,7 +26,7 @@ namespace logowanie
             foreach (string str in items)
             {
                 listBox1.Items.Add(str);
-            }
+            }//alexiej sudzikow to pedzio i gej i ma fajna mame :DDDDDDDD
         }
 
 
