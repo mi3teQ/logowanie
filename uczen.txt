@@ -9,3 +9,5 @@ oktan dbg 3
 oktan dbg 3
 kstaj bnz 3
 kstaj bnz 3
+stachu ligma 2prt
+stachu ligma 2prt
