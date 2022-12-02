@@ -82,5 +82,36 @@ namespace logowanie
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Server serv123 = new Server();
+            try
+            {
+                serv123.cmd = new SqlCommand();
+                serv123.cmd.Connection = serv123.con;
+                serv123.cmd.CommandText = serv123.query;
+
+                serv123.da.SelectCommand = serv123.cmd;
+                serv123.da.Fill(serv123.dt);
+
+                listBox1.DataSource = serv123.dt;
+                listBox1.DisplayMember = "Fullname";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                serv123.da.Dispose();
+            }
+            SqlCommand command = new SqlCommand();
+
+            command.Connection = serv123;
+             command.CommandText = "Insert into uczen * Values()";
+                command.CommandType = CommandType.Text;
+
+        }
     }
 }
